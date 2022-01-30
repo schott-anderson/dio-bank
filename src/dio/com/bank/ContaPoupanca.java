@@ -2,8 +2,8 @@ package dio.com.bank;
 
 public class ContaPoupanca extends Conta {
 
-    public ContaPoupanca(Cliente cliente) {
-        super(cliente);
+    public ContaPoupanca(Cliente cliente, Banco banco) {
+        super(cliente, banco);
     }
 
     @Override
@@ -11,5 +11,4 @@ public class ContaPoupanca extends Conta {
         System.out.println("=== Extrato Conta Poupança ===");
         super.imprimirInfosComuns();
     }
-
 }

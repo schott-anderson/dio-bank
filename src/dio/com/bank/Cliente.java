@@ -22,4 +22,9 @@ public class Cliente {
         this.score = score;
     }
 
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'';
+
+    }
 }
