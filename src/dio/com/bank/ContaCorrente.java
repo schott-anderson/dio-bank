@@ -6,7 +6,7 @@ public class ContaCorrente extends Conta{
         super(cliente);
     }
 
-    private double chequeEspecial = Double.parseDouble(cliente.getScore())*1.25;;
+    private double chequeEspecial; //= Double.parseDouble(cliente.getScore())*1.25;
     private double chequeEspecialUtilizado = 0.00;
 
 
@@ -32,8 +32,16 @@ public class ContaCorrente extends Conta{
         };
     }
 
+
+    public void setChequeEspecial(double chequeEspecial) {
+        this.chequeEspecial = chequeEspecial;
+    }
+
     public double getChequeEspecial(){
         return chequeEspecial;
     }
 
+    public double getChequeEspecialUtilizado() {
+        return chequeEspecialUtilizado;
+    }
 }

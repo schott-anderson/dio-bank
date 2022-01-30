@@ -11,6 +11,8 @@ public class Main {
 
         ContaCorrente cc = new ContaCorrente(cl2);
         cc.depositar(400);
+        ChequeEspecial chequeEspecial = new ChequeEspecial(cc, cl2);
+        chequeEspecial.ativaChequeEspecial(cc, cl2);
         ContaPoupanca cp = new ContaPoupanca(cl2);
 
         cc.sacar(200);
